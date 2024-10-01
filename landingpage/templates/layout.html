@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>JMathPI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <h1>Pi Mathematical, Physical and Informatical Journal</h1>
+    <div style="float: right; margin-right: 40px;">
+        <img src="/static/Flag_of_Hungary.svg" width=40px height=20px />
+        <img src="/static/English_language.svg" width=40px height=20px />
+    </div>
     <div class="menu">
+        <div class="logo">
+        </div>
         <ul>
-            <li><a href="{{ url_for('aims_and_scope') }}">Aims and Scope</a></li>
-            <li><a href="{{ url_for('editorial_board') }}">Editorial Board</a></li>
-            <li><a href="{{ url_for('history') }}">History</a></li>
-            <li><a href="{{ url_for('submission') }}">Submission</a></li>
-            <li><a href="{{ url_for('instructions_for_authors') }}">Instructions for Authors</a></li>
-            <li><a href="{{ url_for('instructions_for_editors') }}">Instructions for Editors</a></li>
-            <li><a href="{{ url_for('instructions_for_reviewers') }}">Instructions for Reviewers</a></li>
-            <li><a href="{{ url_for('current_issue') }}">Current Issue</a></li>
-            <li><a href="{{ url_for('archive') }}">Archive</a></li>
-            <li><a href="{{ url_for('contacts') }}">Contacts</a></li>
-            <li><a href="{{ url_for('terms_and_conditions') }}">Terms and Conditions</a></li>
+            {% for name, label in menu_items %}
+            <li>
+                {% if request.endpoint == name %}
+                {{ label }}
+                {% else %}
+                <a href="{{ url_for(name) }}">{{ label }}</a>
+                {% endif %}
+            </li>
+            {% endfor %}
         </ul>
     </div>
     <div class="content">

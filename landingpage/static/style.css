@@ -1,0 +1,38 @@
+body {
+    background-color: white;
+}
+
+div.menu {
+    float: left;
+    width: 250px;
+    border-right: solid gray 1px;
+}
+
+div.menu > ul {
+    list-style-type: none;
+}
+
+div.menu > ul > li {
+    margin-bottom: 10px;
+    color: red;
+}
+
+div.menu > ul > li > a {
+    text-decoration: none;
+    color: black;
+}
+
+div.content {
+    margin-left: 300px;
+    margin-right: 50px;
+}
+
+div.logo {
+    width: 120px;
+    height: 120px;
+    background-image: url('/static/jmathpi_logo.svg');
+    background-size: 120px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
