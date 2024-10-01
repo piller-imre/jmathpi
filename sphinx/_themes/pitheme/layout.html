@@ -1,0 +1,16 @@
+<html>
+    <head>
+        {% for css in css_files %}
+        <link rel="stylesheet" href="{{ pathto(css, 1)|e }}" type="text/css" />
+        {% endfor %}
+    </head>
+    <body>
+        <div class="menu">
+            {{ toctree() }}
+        </div>
+        <div class="content">
+            {% block body %} {% endblock %}
+        </div>
+    </body>
+</html>
+

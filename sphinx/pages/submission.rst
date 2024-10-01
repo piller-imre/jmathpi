@@ -1,0 +1,35 @@
+<h2>Benyújtás, megjelenés ütemezése</h2>
+
+<div>
+Egy évben egy kötet jelenik meg. A folyóirat működése szempontjából akadémiai évről van szó, mely szeptemberben indul, és a július-augusztus hónapokban (a nyári szünetre való tekintettel) a folyóirat működése szünetel. 
+</div>
+
+<div>
+A köteten belül külön füzetek tartalmazzák a matematikai, fizikai és informatikai témájú, elemi, ismeretterjesztő és tudományos jellegű cikkeket. 
+</div>
+
+<div>
+A füzetekben a cikkek megjelenés szerinti időrendi sorrendben követik egymást. 
+</div>
+
+<div>
+A cikkek elfogadást követően (a DOI szám regisztrálása után) azonnal megjelenik, hivatkozható. 
+</div>
+
+<h2>Benyújtás módja</h2>
+
+Minden beadott cikkhez kell egy nyilatkozatot kitölteni arról, hogy 
+
+<ul>
+    <li>a cikk a szerző/szerzők saját szellemi terméke, továbbá</li>
+    <li>a kapcsolattartó szerző egy személyben képviseli a szerzőket, a velük való egyeztetésekért ő felel.</li>
+</ul>
+
+<div>
+A kéziratokat anoním módon szükséges beküldeni, vagyis nem tartalmazhatják a szerzők nevét, ezzel segítve, hogy a bírálat objektív, részrehajlás nélküli tudjon lenni. 
+</div>
+
+<div>
+A cikkeket levélben kell elküldeni a <code>pi.journal@uni-miskolc.hu</code> e-mail címre.
+</div>
+
