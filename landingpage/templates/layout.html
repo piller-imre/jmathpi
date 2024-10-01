@@ -12,8 +12,10 @@
         <img src="/static/English_language.svg" width=40px height=20px />
     </div>
     <div class="menu">
-        <div class="logo">
-        </div>
+        <a href="{{ url_for('home') }}">
+            <div class="logo">
+            </div>
+        </a>
         <ul>
             {% for name, label in menu_items %}
             <li>
