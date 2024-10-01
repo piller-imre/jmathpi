@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JMathPI</title>
+</head>
+<body>
+    <h1>Pi Mathematical, Physical and Informatical Journal</h1>
+    <div class="menu">
+        <ul>
+            <li><a href="{{ url_for('aims_and_scope') }}">Aims and Scope</a></li>
+            <li><a href="{{ url_for('editorial_board') }}">Editorial Board</a></li>
+            <li><a href="{{ url_for('history') }}">History</a></li>
+            <li><a href="{{ url_for('submission') }}">Submission</a></li>
+            <li><a href="{{ url_for('instructions_for_authors') }}">Instructions for Authors</a></li>
+            <li><a href="{{ url_for('instructions_for_editors') }}">Instructions for Editors</a></li>
+            <li><a href="{{ url_for('instructions_for_reviewers') }}">Instructions for Reviewers</a></li>
+            <li><a href="{{ url_for('current_issue') }}">Current Issue</a></li>
+            <li><a href="{{ url_for('archive') }}">Archive</a></li>
+            <li><a href="{{ url_for('contacts') }}">Contacts</a></li>
+            <li><a href="{{ url_for('terms_and_conditions') }}">Terms and Conditions</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
+
