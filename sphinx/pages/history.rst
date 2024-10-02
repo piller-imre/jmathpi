@@ -1,3 +1,4 @@
-<h2>A folyóirat története</h2>
+A folyóirat története
+=====================
 
 ...

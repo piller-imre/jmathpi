@@ -1,33 +1,38 @@
-<h2>Szerkesztőbizottság</h2>
+Szerkesztőbizottság
+===================
 
-<h3>Főszerkesztő</h3>
+Főszerkesztő
+------------
 
-<div>Dr. Glavosits Tamás</div>
+* Dr. Glavosits Tamás
 
-<h3>Matematika tématerület szerkesztői</h3>
 
-<div>Dr. Bessenyei Mihály</div>
+Matematika tématerület szerkesztői
+----------------------------------
 
-<div>Dr. Földvári Attila József</div>
+* Dr. Bessenyei Mihály
+* Dr. Földvári Attila József
+* Dr. Házy Attila
+* Tóthné Dr. Makó Judit
+* Dr. Radeleczki Sándor
+* Dr. Rakaczki Csaba
+* Dr. Túri József
 
-<div>Dr. Házy Attila</div>
 
-<div>Tóthné Dr. Makó Judit</div>
+Fizika tématerület szerkesztői
+------------------------------
 
-<div>Dr. Radeleczki Sándor</div>
+* Dr. Kovács Endre
 
-<div>Dr. Rakaczki Csaba</div>
 
-<div>Dr. Túri József</div>
+Informatika tématerület szerkesztői
+-----------------------------------
 
-<h3>Fizika tématerület szerkesztői</h3>
+* Dr. Nehéz Károly Róbert
 
-<div>Dr. Kovács Endre</div>
 
-<h3>Informatika tématerület szerkesztői</h3>
+Alapító szerkesztő
+------------------
 
-<div>Dr. Nehéz Károly Róbert</div>
+* Dr. Körtesi Péter
 
-<h3>Alapító szerkesztő</h3>
-
-<div>Dr. Körtesi Péter</div>

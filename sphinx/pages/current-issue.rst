@@ -1,3 +1,4 @@
-<h2>Aktuális kötet</h2>
+Aktuális kötet
+==============
 
 ...

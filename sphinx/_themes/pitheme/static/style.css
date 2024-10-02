@@ -1,4 +1,94 @@
 body {
-    background-color: red;
+    background-color: white;
+    font-size: 20px;
+    font-family: Helvetica;
+}
+
+div.menu {
+    float: left;
+    width: 250px;
+    border-right: solid gray 1px;
+}
+
+div.menu ul {
+    list-style-type: none;
+}
+
+ul.current {
+    list-style-type: none;
+}
+
+li.toctree-l1 {
+    margin-bottom: 10px;
+    color: black;
+}
+
+li.toctree-l1 > a {
+    text-decoration: none;
+    color: black;
+}
+
+li.current > a {
+    color: red;
+}
+
+div.content {
+    margin-left: 300px;
+    margin-right: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+div.logo {
+    width: 180px;
+    height: 180px;
+    background-image: url('jmathpi_logo.svg');
+    background-size: 180px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+}
+
+div.banner {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+a.headerlink {
+    display: none;
+}
+
+div.me-logo {
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 180px;
+    height: 52px;
+    background-image: url('me.png');
+    background-size: 180px;
+}
+
+div.lang-selector {
+    float: right;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+div.hu-flag, div.en-flag {
+    width: 40px;
+    height: 20px;
+    background-size: 40px;
+    display: inline-block;
+}
+
+div.hu-flag {
+    background-image: url('Flag_of_Hungary.svg');
+}
+
+div.en-flag {
+    background-image: url('English_language.svg');
+}
+
+div.toctree-wrapper {
+    display: none;
 }
 

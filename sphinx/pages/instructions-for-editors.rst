@@ -1,3 +1,4 @@
-<h2>Információk a szerkesztőknek</h2>
+Információk a szerkesztőknek
+============================
 
 ...

@@ -1,12 +1,32 @@
 <html>
     <head>
+        <meta charset="UTF-8">
+        <title>JMathPI</title>
         {% for css in css_files %}
         <link rel="stylesheet" href="{{ pathto(css, 1)|e }}" type="text/css" />
         {% endfor %}
     </head>
     <body>
+        <div class="banner">Pi Mathematical, Physical and Informatical Journal</div>
+        <div class="lang-selector">
+            <div class="hu-flag"></div>
+            <div class="en-flag"></div>
+        </div>
         <div class="menu">
+            {% if pagename != 'index' %}
+            <a href="../index.html">
+                <div class="logo">
+                </div>
+            </a>
+            {% else %}
+            <div class="logo">
+            </div>
+            {% endif %}
             {{ toctree() }}
+            <a href="https://www.uni-miskolc.hu">
+                <div class="me-logo">
+                </div>
+            </a>
         </div>
         <div class="content">
             {% block body %} {% endblock %}

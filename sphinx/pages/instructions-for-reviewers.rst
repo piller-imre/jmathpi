@@ -1,3 +1,4 @@
-<h2>Információk a bírálóknak</h2>
+Információk a bírálóknak
+========================
 
 ...
