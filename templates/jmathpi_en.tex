@@ -23,6 +23,9 @@
 % Enumeration
 \usepackage{enumitem}
 
+% Multiple rows for the journal title heading
+\usepackage{multirow}
+
 % Links
 \usepackage{url}
 \usepackage{hyperref}
@@ -75,13 +78,17 @@
 % The date of the final version
 \date{\textit{24 September, 2024}}
 
-Pi Mathematical, Physical, and Informatical Journal
+\noindent \begin{tabular}{lp{13cm}}
+	\multirow{3}{*}{\includegraphics[width=22mm, height=22mm]{jmathpi_logo.pdf}}
+	& Pi Mathematical, Physical, and Informatical Journal \\
+	& University of Miskolc \\
+	& \\
+	& Vol. 1, Math., Scientific, pp. 1-3, 2024 \hfill \href{https://doi.org/10.1000/jmathpi-1}{DOI: 10.1000/jmathpi-????} \\
+\end{tabular}
 
-University of Miskolc
+\bigskip
 
-TODO: Use a banner here with logo!
-
-\href{https://doi.org/10.1000/jmathpi-1}{DOI: 10.1000/jmathpi-????}
+\hrule
 
 {\let\newpage\relax\maketitle}
 
@@ -165,6 +172,8 @@ Text of this proof.
 
 \begin{table}[!ht] % or [H] to turn off float
   \centering
+  \caption{Table caption.}\label{table:Key3}
+  \medskip
   \begin{tabular}{|c|c|}
     \hline
     1 & 2 \\
@@ -172,7 +181,6 @@ Text of this proof.
     3 & 4 \\
     \hline
   \end{tabular}
-  \caption{Table caption.}\label{table:Key3}
 \end{table}
 
 By the Table \ref{table:Key3}\dots

@@ -23,13 +23,16 @@
 % Enumeration
 \usepackage{enumitem}
 
+% Multiple rows for the journal title heading
+\usepackage{multirow}
+
 % Links
 \usepackage{url}
 \usepackage{hyperref}
 
 \usepackage{fancyhdr}
 
-\fancyhead[LO, LE]{$\pi$ Matematikai, Fizikai és Informatikai Folyóirat}
+\fancyhead[LO, LE]{Pi Matematikai, Fizikai és Informatikai Folyóirat}
 \fancyhead[RO, RE]{1. kötet, Matematikai füzet, 2024.}
 
 \usepackage{amsthm}
@@ -75,13 +78,17 @@
 %Az utolsó verzió dátuma
 \date{\textit{2024. szeptember 24.}}
 
-Pi Matematikai, Fizikai és Informatikai Folyóirat
+\noindent \begin{tabular}{lp{13cm}}
+	\multirow{3}{*}{\includegraphics[width=22mm, height=22mm]{jmathpi_logo.pdf}}
+	& Pi Matematikai, Fizikai és Informatikai Folyóirat \\
+	& Miskolci Egyetem \\
+	& \\
+	& 1. kötet, Mat. füzet, 1-3. oldal, 2024. \hfill \href{https://doi.org/10.1000/jmathpi-1}{DOI: 10.1000/jmathpi-????} \\
+\end{tabular}
 
-Miskolci Egyetem 
+\bigskip
 
-TODO: Használja a következő logót tartalmazó bannert!
-
-\href{https://doi.org/10.1000/jmathpi-1}{DOI: 10.1000/jmathpi-????}
+\hrule
 
 {\let\newpage\relax\maketitle}
 
@@ -165,6 +172,8 @@ A bizonyítás szövege.
 
 \begin{table}[!ht] % vagy [H] az elúszás kikapcsolásakor
   \centering
+  \caption{A táblázat felirata.}\label{table:Key3}
+  \medskip
   \begin{tabular}{|c|c|}
     \hline
     1 & 2 \\
@@ -172,7 +181,6 @@ A bizonyítás szövege.
     3 & 4 \\
     \hline
   \end{tabular}
-  \caption{A táblázat felirata.}\label{table:Key3}
 \end{table}
 
 Az \ref{table:Key3}. táblázat alapján\dots
