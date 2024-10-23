@@ -1,0 +1,204 @@
+\documentclass[a4paper,12pt]{article}
+
+% Set margins
+\usepackage[hmargin=2.5cm, vmargin=2.5cm]{geometry}
+
+\frenchspacing
+
+% Language packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage[magyar]{babel}
+
+% AMS
+\usepackage{amssymb,amsmath}
+
+% Graphic packages
+\usepackage{graphicx}
+
+% Colors
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% Enumeration
+\usepackage{enumitem}
+
+% Links
+\usepackage{url}
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\fancyhead[LO, LE]{Pi Mathematical, Physical, and Informatical Journal}
+\fancyhead[RO, RE]{Vol. 1, Math., Scientific, 2024}
+
+\usepackage{amsthm}
+%\newtheorem{definition}{Definition}[section]
+%\newtheorem{notation}{Notation}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}%[section]
+\newtheorem{problem}[theorem]{Problem}%[section]
+\newtheorem{corollary}[theorem]{Corollary}%[section]
+\newtheorem{remark}[theorem]{Remark}%[section]
+\newtheorem{example}[theorem]{Example}%[section]
+\newtheorem{exercise}[theorem]{Exercise}%[section]
+%\newtheorem{solution}[theorem]{Solution}%[section]
+\newtheorem{conjecture}[theorem]{Conjecture}%[section]
+
+\renewenvironment{proof}[1][]{\noindent\textit{Proof.} }{$\qed$}
+\newenvironment{solution}[1][]{\noindent\textit{Solution.} }{$\qed$}
+
+\begin{document}
+
+\pagestyle{fancy}
+
+\title{\sc Paper title \thanks{This research was supported by the \dots}}
+
+% Please enter the authors' names, affiliations, and email addresses in the appropriate spaces
+\author{
+	\textbf{First Author} \\
+	Affiliation 1 \\
+	\href{mailto:first.author@email.com}{first.author@email.com}
+\and
+	\textbf{Second Author} \\
+	Affiliation 2 \\
+	\href{mailto:second.author@email.com}{second.author@email.com}
+\and
+	\textbf{Third Author} \\
+	Affiliation 3 \\
+	\href{mailto:third.author@email.com}{third.author@email.com}
+}
+
+% The date of the final version
+\date{\textit{24 September, 2024}}
+
+Pi Mathematical, Physical, and Informatical Journal
+
+University of Miskolc
+
+TODO: Use a banner here with logo!
+
+\href{https://doi.org/10.1000/jmathpi-1}{DOI: 10.1000/jmathpi-????}
+
+{\let\newpage\relax\maketitle}
+
+\begin{abstract}
+Text of the abstract.
+\end{abstract}
+
+{\def\thefootnote{}\footnotetext{Keywords: math, AMS Subject Classification: AB123, CD567}}
+
+\section{Introduction}
+
+Text of the Introduction.
+
+\section{Title of the second section}
+
+Please use the environments below:
+
+\begin{definition}
+Text of this definition.
+\end{definition}
+
+\begin{notation}
+Text of this notation.
+\end{notation}
+
+\begin{theorem}\label{theorem:Key1}
+Text of this theorem. Use the mathematical formulas in the text as $\frac{a}{b}$. 
+\par 
+\[
+\text{Text of this math equation without counting}
+\]
+\begin{equation}\label{equation:Key2}
+\text{Text of this math equation with counting, like } \dfrac{a}{b}
+\end{equation}
+Use the math formulas in the math environment as in equation \ref{equation:Key2}. 
+\end{theorem}
+
+\par By Theorem \ref{theorem:Key1}...
+
+\begin{lemma}
+Text of this lemma.
+\end{lemma}
+
+\begin{proposition}
+Text of this proposition.
+\end{proposition}
+
+\begin{problem}
+Text of this problem.
+\end{problem}
+
+\begin{corollary}
+Text of this corollary.
+\end{corollary}
+
+\begin{remark}
+Text of this remark.
+\end{remark}
+
+\begin{example}
+Text of this example.
+\end{example}
+
+\begin{exercise}
+Text of this exercise.
+\end{exercise}
+
+\begin{solution}
+Text of this solution.
+\end{solution}
+
+\begin{conjecture}
+Text of this conjecture.
+\end{conjecture}
+
+\begin{proof}
+Text of this proof.
+\end{proof}
+
+\section{Title of the third section}
+
+\begin{table}[!ht] % or [H] to turn off float
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    1 & 2 \\
+    \hline
+    3 & 4 \\
+    \hline
+  \end{tabular}
+  \caption{Table caption.}\label{table:Key3}
+\end{table}
+
+By the Table \ref{table:Key3}\dots
+
+\begin{figure}[!ht] % or [H] to turn off float
+  \centering
+  \includegraphics[width=3cm]{ME_Logo.png}
+  \caption{Figure caption.}\label{figure:Key4}
+\end{figure}
+
+By the Figure \ref{figure:Key4}\dots
+
+Use different kind of lists, for example
+\begin{itemize}
+\item unordered list,
+\item ordered list,
+\item hierarchical list.
+\end{itemize}
+
+\section{Title of the fourth section}%etc.
+
+Refer to books \cite{erdos2013} and articles \cite{aczel1983}.
+
+\paragraph{Acknowledgements.} Text of the acknowledgements.
+
+\bibliographystyle{plaindin}
+\bibliography{references}
+
+\end{document}

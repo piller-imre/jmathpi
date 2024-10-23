@@ -1,0 +1,204 @@
+\documentclass[a4paper,12pt]{article}
+
+% Set margins
+\usepackage[hmargin=2.5cm, vmargin=2.5cm]{geometry}
+
+\frenchspacing
+
+% Language packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[magyar]{babel}
+
+% AMS
+\usepackage{amssymb,amsmath}
+
+% Graphic packages
+\usepackage{graphicx}
+
+% Colors
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% Enumeration
+\usepackage{enumitem}
+
+% Links
+\usepackage{url}
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\fancyhead[LO, LE]{$\pi$ Matematikai, Fizikai és Informatikai Folyóirat}
+\fancyhead[RO, RE]{1. kötet, Matematikai füzet, 2024.}
+
+\usepackage{amsthm}
+%\newtheorem{definition}{Definíció}[section]
+%\newtheorem{notation}{Jelölés}[section]
+\newtheorem{theorem}{Tétel}[section]
+\newtheorem{definition}[theorem]{Definíció}
+\newtheorem{notation}[theorem]{Jelölés}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Propozíció}%[section]
+\newtheorem{problem}[theorem]{Probléma}%[section]
+\newtheorem{corollary}[theorem]{Következmény}%[section]
+\newtheorem{remark}[theorem]{Megjegyzés}%[section]
+\newtheorem{example}[theorem]{Példa}%[section]
+\newtheorem{exercise}[theorem]{Feladat}%[section]
+%\newtheorem{solution}[theorem]{Megoldás}%[section]
+\newtheorem{conjecture}[theorem]{Sejtés}%[section]
+
+\renewenvironment{proof}[1][]{\noindent\textit{Bizonyítás} }{$\qed$}
+\newenvironment{solution}[1][]{\noindent\textit{Megoldás} }{$\qed$}
+
+\begin{document}
+
+\pagestyle{fancy}
+
+\title{\sc A cikk címe \thanks{Ezt a kutatást támogatta \dots}}
+
+% Kérem írja be a szerzők nevét, hovatartozását, e-mail címét a megfelelő helyre. 
+\author{
+	\textbf{Első Szerző} \\
+	Affiliáció 1 \\
+	\href{mailto:első.szerző@email.com}{első.szerző@email.com}
+\and
+	\textbf{Második Szerző} \\
+	Affiliáció 2 \\
+	\href{mailto:második.szerző@email.com}{második.szerző@email.com}
+\and
+	\textbf{Harmadik Szerző} \\
+	Affiliáció 3 \\
+	\href{mailto:harmadik.szerző@email.com}{harmadik.szerző@email.com}
+}
+
+%Az utolsó verzió dátuma
+\date{\textit{2024. szeptember 24.}}
+
+Pi Matematikai, Fizikai és Informatikai Folyóirat
+
+Miskolci Egyetem 
+
+TODO: Használja a következő logót tartalmazó bannert!
+
+\href{https://doi.org/10.1000/jmathpi-1}{DOI: 10.1000/jmathpi-????}
+
+{\let\newpage\relax\maketitle}
+
+\begin{abstract}
+Absztrakt szövege.
+\end{abstract}
+
+{\def\thefootnote{}\footnotetext{Kulcsszavak: mat., AMS Subject Classification: AB123, CD567}}
+
+\section{Bevezetés}
+
+A bevezetés szövege. 
+
+\section{A második fejezet címe}
+
+Kérjük, az alábbi környezeteket használja:
+
+\begin{definition}
+A definíció szövege
+\end{definition}
+
+\begin{notation}
+A jelölés szövege.
+\end{notation}
+
+\begin{theorem}\label{theorem:Key1}
+A tétel szövege. Kérjük, hogy így használja a szövegben az olyan matematikai formulákat, mint például az $\frac{a}{b}$. 
+\par 
+\[
+\text{Számozás nélküli matematikai egyenlet szövege}
+\]
+\begin{equation}\label{equation:Key2}
+\text{Számozott matematikai egyenlet szövege, mint pl.} \dfrac{a}{b}
+\end{equation}
+Kérjük használja a matematikai formulákat olyan matematikai környezetben, mint például a \ref{equation:Key2} egyenletben. 
+\end{theorem}
+
+\par A \ref{theorem:Key1} Tétel alapján...
+
+\begin{lemma}
+A lemma szövege.
+\end{lemma}
+
+\begin{proposition}
+A propozíció szövege. 
+\end{proposition}
+
+\begin{problem}
+A probléma szövege. 
+\end{problem}
+
+\begin{corollary}
+A következmény szövege
+\end{corollary}
+
+\begin{remark}
+A megjegyzés szövege. 
+\end{remark}
+
+\begin{example}
+A példa szövege. 
+\end{example}
+
+\begin{exercise}
+A feladat szövege. 
+\end{exercise}
+
+\begin{solution}
+A megoldás szövege. 
+\end{solution}
+
+\begin{conjecture}
+A sejtés szövege. 
+\end{conjecture}
+
+\begin{proof}
+A bizonyítás szövege. 
+\end{proof}
+
+\section{A harmadik fejezet címe}
+
+\begin{table}[!ht] % vagy [H] az elúszás kikapcsolásakor
+  \centering
+  \begin{tabular}{|c|c|}
+    \hline
+    1 & 2 \\
+    \hline
+    3 & 4 \\
+    \hline
+  \end{tabular}
+  \caption{A táblázat felirata.}\label{table:Key3}
+\end{table}
+
+Az \ref{table:Key3}. táblázat alapján\dots
+
+\begin{figure}[!ht] % vagy [H] az elúszás kikapcsolásakor
+  \centering
+  \includegraphics[width=3cm]{ME_Logo.png}
+  \caption{A kép felirata.}\label{figure:Key4}
+\end{figure}
+
+Az \ref{figure:Key4}. ábra alapján\dots
+
+Kérjük használjon különböző listákat, például
+\begin{itemize}
+\item rendezetlen lista,
+\item rendezett lista,
+\item hierarchikus lista.
+\end{itemize}
+
+\section{A negyedik fejezet címe}%stb.
+
+Hivatkozzon könyvekre \cite{erdos2013}, illetve cikkekre \cite{aczel1983}.
+
+\paragraph{Köszönetnyilvánítás.} A köszönetnyilvánítás szövege.
+
+\bibliographystyle{plaindin}
+\bibliography{references}
+
+\end{document}
