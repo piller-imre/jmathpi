@@ -39,10 +39,12 @@
 %\newtheorem{definition}{Definition}[section]
 %\newtheorem{notation}{Notation}[section]
 \newtheorem{theorem}{Theorem}[section]
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{notation}[theorem]{Notation}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Proposition}%[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{notation}[theorem]{Notation}
 \newtheorem{problem}[theorem]{Problem}%[section]
 \newtheorem{corollary}[theorem]{Corollary}%[section]
 \newtheorem{remark}[theorem]{Remark}%[section]
@@ -58,21 +60,21 @@
 
 \pagestyle{fancy}
 
-\title{\sc Paper title \thanks{This research was supported by the \dots}}
+\title{\sc Paper title}
 
 % Please enter the authors' names, affiliations, and email addresses in the appropriate spaces
 \author{
 	\textbf{First Author} \\
-	Affiliation 1 \\
-	\href{mailto:first.author@email.com}{first.author@email.com}
+	{\normalsize Affiliation 1} \\
+	{\normalsize \href{mailto:first.author@email.com}{first.author@email.com}}
 \and
 	\textbf{Second Author} \\
-	Affiliation 2 \\
-	\href{mailto:second.author@email.com}{second.author@email.com}
+	{\normalsize Affiliation 2} \\
+	{\normalsize \href{mailto:second.author@email.com}{second.author@email.com}}
 \and
 	\textbf{Third Author} \\
-	Affiliation 3 \\
-	\href{mailto:third.author@email.com}{third.author@email.com}
+	{\normalsize Affiliation 3} \\
+	{\normalsize \href{mailto:third.author@email.com}{third.author@email.com}}
 }
 
 % The date of the final version

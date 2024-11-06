@@ -36,13 +36,16 @@
 \fancyhead[RO, RE]{1. kötet, Matematikai füzet, 2024.}
 
 \usepackage{amsthm}
+
 %\newtheorem{definition}{Definíció}[section]
 %\newtheorem{notation}{Jelölés}[section]
 \newtheorem{theorem}{Tétel}[section]
-\newtheorem{definition}[theorem]{Definíció}
-\newtheorem{notation}[theorem]{Jelölés}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{proposition}[theorem]{Propozíció}%[section]
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definíció}
+\newtheorem{notation}[theorem]{Jelölés}
 \newtheorem{problem}[theorem]{Probléma}%[section]
 \newtheorem{corollary}[theorem]{Következmény}%[section]
 \newtheorem{remark}[theorem]{Megjegyzés}%[section]
@@ -58,21 +61,21 @@
 
 \pagestyle{fancy}
 
-\title{\sc A cikk címe \thanks{Ezt a kutatást támogatta \dots}}
+\title{\sc A cikk címe}
 
 % Kérem írja be a szerzők nevét, hovatartozását, e-mail címét a megfelelő helyre. 
 \author{
 	\textbf{Első Szerző} \\
-	Affiliáció 1 \\
-	\href{mailto:első.szerző@email.com}{első.szerző@email.com}
+	{\normalsize Affiliáció 1} \\
+	{\normalsize \href{mailto:első.szerző@email.com}{első.szerző@email.com}}
 \and
 	\textbf{Második Szerző} \\
-	Affiliáció 2 \\
-	\href{mailto:második.szerző@email.com}{második.szerző@email.com}
+	{\normalsize Affiliáció 2} \\
+	{\normalsize \href{mailto:második.szerző@email.com}{második.szerző@email.com}}
 \and
 	\textbf{Harmadik Szerző} \\
-	Affiliáció 3 \\
-	\href{mailto:harmadik.szerző@email.com}{harmadik.szerző@email.com}
+	{\normalsize Affiliáció 3} \\
+	{\normalsize \href{mailto:harmadik.szerző@email.com}{harmadik.szerző@email.com}}
 }
 
 %Az utolsó verzió dátuma
